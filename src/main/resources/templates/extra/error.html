@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <th:block th:replace="common/shared/general::headerfiles"></th:block>
+    <!-- include extra headerfiles here -->
+</head>
+<body id="page-top">
+
+    <th:block th:replace="common/shared/adminfragment::topformat"></th:block>
+
+    <div class="container-fluid">
+        
+
+        <!-- Your content goes here.. -->
+
+        <!-- 404 Error Text -->
+        <div class="text-center">
+            <div class="error mx-auto" data-text="404">404</div>
+            <p class="lead text-gray-800 mb-5">Page Not Found</p>
+            <p class="text-gray-500 mb-0">It looks like you found a glitch in the matrix...</p>
+            <a th:href="@{/}">&larr; Back to Dashboard</a>
+        </div>
+
+        <!-- ..Your content ends here -->
+    </div>
+
+    <th:block th:replace="common/shared/adminfragment::bottomformat"></th:block>
+
+    <th:block th:replace="common/shared/general::scripts"></th:block>
+    <!-- include extra scripts here -->
+</body>
+</html>
